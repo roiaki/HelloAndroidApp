@@ -11,7 +11,23 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        total(50, 1000)
+        val dog = Dog("ポチ", 3)      // 名前をポチ、年齢3歳で、Dogのインスタンスを作る
+
+        dog.move()
+/*
+        dog.say()  // ポチが吠えます（ログ出力）
+        Log.d("kotlintest", "犬の名前は" + dog.name + "です。")
+        Log.d("kotlintest", "犬の年齢は" + dog.age + "歳です。")
+
+        val bigdog = BigDog("ヨーゼフ", 15)
+        bigdog.say()
+
+        Log.d("kotlintest", "犬の名前は" + bigdog.name + "です")
+        Log.d("kotlintest", "犬の年齢は" + bigdog.age + "です")
+*/
+    }
+}
+        // total(50, 1000)
 
 /*
         // 整数型の変数をnumという名前で作成して、10を代入する
@@ -48,15 +64,15 @@ class MainActivity : AppCompatActivity() {
             2 -> Log.d("kotlintest", "ミルクを注文しました")
             else -> Log.d("kotlintest", "オーダーミスです")
         }
- */
+*/
 
-        /*
+/*
         for(i in 0 until 10) {
             Log.d("kotlintest", Integer.toString(i))
         }
-         */
+*/
 
-        /*
+/*
         val num1 = 100
         val num2 = 0
         var ans = 0
@@ -71,20 +87,17 @@ class MainActivity : AppCompatActivity() {
             Log.d("kotlintest", "ans = " + ans.toString())
         }
 
-         */
+*/
 
-        /*
+/*
         val points = arrayOf(10, 6, 15, 23, 17)
 
         for(i in points) {
             Log.d("kotlintest", i.toString())
         }
+*/
 
-         */
-
-
-    }
-
+/*
     private fun total(first: Int, last: Int) {
         var sum = 0
         for (i in first..last) {
@@ -92,4 +105,6 @@ class MainActivity : AppCompatActivity() {
         }
         Log.d("kotlintest", sum.toString())
     }
-}
+*/
+
+
